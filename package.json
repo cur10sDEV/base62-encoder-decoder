@@ -1,0 +1,55 @@
+{
+  "name": "@cur10sdev/base62-encoder-decoder",
+  "version": "1.0.0",
+  "description": "High-performance base62 encoder/decoder for JavaScript and Node.js. Supports Number and BigInt inputs, optimized for both time and space complexity.",
+  "main": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run",
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && tsc -p ./tsconfig.json",
+    "prepack": "npm run build",
+    "semantic-release": "semantic-release"
+  },
+  "keywords": [
+    "base62",
+    "base-62",
+    "encoder",
+    "decoder",
+    "encoding",
+    "decoding",
+    "number-conversion",
+    "bigint",
+    "compression",
+    "url-shortening"
+  ],
+  "author": {
+    "name": "cur10sdev",
+    "url": "https://github.com/cur10sDEV"
+  },
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cur10sDEV/base62-encoder-decoder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cur10sDEV/base62-encoder-decoder/issues"
+  },
+  "homepage": "https://github.com/cur10sDEV/base62-encoder-decoder#readme",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "semantic-release": "^25.0.2",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.14"
+  }
+}
