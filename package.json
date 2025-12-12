@@ -1,6 +1,6 @@
 {
   "name": "@cur10sdev/base62-encoder-decoder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "High-performance base62 encoder/decoder for JavaScript and Node.js. Supports Number and BigInt inputs, optimized for both time and space complexity.",
   "main": "./dist/index.js",
   "types": "./dist/types/index.d.ts",

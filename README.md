@@ -17,7 +17,7 @@ High-performance base62 encoder/decoder for JavaScript and Node.js. Optimized fo
 ## Installation
 
 ```bash
-npm install base62-encoder-decoder
+npm install @cur10sdev/base62-encoder-decoder
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ npm install base62-encoder-decoder
 ### Basic Encoding/Decoding
 
 ```javascript
-const { encode, decode } = require("base62-encoder-decoder");
+const { encode, decode } = require("@cur10sdev/base62-encoder-decoder");
 
 // Encode a number to base62
 const encoded = encode(12345);
@@ -39,7 +39,7 @@ console.log(decoded); // 12345
 ### BigInt Support
 
 ```javascript
-const { encode, decode } = require("base62-encoder-decoder");
+const { encode, decode } = require("@cur10sdev/base62-encoder-decoder");
 
 // Handle very large numbers
 const largeNum = BigInt("123456789012345678901234567890");
@@ -52,7 +52,7 @@ console.log(decoded === largeNum); // true
 ### Custom Base
 
 ```javascript
-const { encode, decode } = require("base62-encoder-decoder");
+const { encode, decode } = require("@cur10sdev/base62-encoder-decoder");
 
 // Encode in base 16 (hexadecimal)
 const hex = encode(255, 16);
@@ -70,7 +70,7 @@ console.log(base36); // "rs"
 ### TypeScript
 
 ```typescript
-import { encode, decode, CHARACTERS } from "base62-encoder-decoder";
+import { encode, decode, CHARACTERS } from "@cur10sdev/base62-encoder-decoder";
 
 const encoded: string = encode(12345);
 const decoded: number | bigint = decode(encoded);
@@ -153,7 +153,7 @@ Benchmarks on typical inputs:
 ## Example: URL Shortening
 
 ```javascript
-const { encode, decode } = require("base62-encoder-decoder");
+const { encode, decode } = require("@cur10sdev/base62-encoder-decoder");
 
 // Simulate a URL shortening service
 class URLShortener {
@@ -190,4 +190,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Support
 
-If you encounter any issues or have questions, please open an issue on [GitHub](https://github.com/yourusername/base62-encoder-decoder/issues).
+If you encounter any issues or have questions, please open an issue on [GitHub](https://github.com/cur10sDEV/base62-encoder-decoder/issues).
